@@ -4,6 +4,22 @@ Here's all notable changes and commits to both the configuration repo and the ba
 Many thanks to all those who have submitted issues and pull requests to make this firmware better!
 ## Config repo
 
+12/27/2023 - Change how the characters are used in the versioning script for improved MacOS experience [#303](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/pull/303)
+
+12/15/2022 - Update keymap.json to reflect new versioning macro [#300](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/pull/300)
+
+12/15/2023 - Add PR template [#293](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/pull/293)
+
+12/6/2023 - Update versioning script to use bash from $PATH [#287](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/pull/287)
+
+12/5/2023 - Update Bluetooth settings in light of user feedback [#289](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/pull/289)
+
+11/16/2023 - Update changelog with base ZMK update [#268](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/pull/268)
+
+11/15/2023 - Add and document the new automatic versioning system [#267](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/pull/267) 
+
+11/7/2023 - Add and document a new configuration option for extended NKRO ranges [#264](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/pull/264) 
+
 11/2/2023 - Update the documentation to note the new configuration options, other miscellaneous improvements based on feedback [#260](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/pull/260) 
 
 10/30/2023 - Update the [settings_reset.uf2](/settings-reset.uf2) file to improve reset behaviour with the new update
@@ -23,7 +39,6 @@ Many thanks to all those who have submitted issues and pull requests to make thi
 4/7/2023 - README improvements, adding instructions on flashing, links to the GUI editor and formatting cleanup [#128](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/pull/128)
 
 3/4/2023 - Add extra keys into matrix that point to nowhere, fixes spurious keypress issues when using USB3.1 cables [#114](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/pull/114) [#116](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/pull/116)
-
 
 2/14/2023 - Disable ZMK logging by default to improve power consumption [#101](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/pull/101)
 
@@ -84,6 +99,16 @@ There have beeen 4 branches of ZMK used for the 360 Pro so far. Beta branches ar
 
 
 ### adv360-z3.2-2
+
+11/16/2023 - Fix race condition in the bluetooth code causing issues with split connectivity
+
+11/7/2023 - Put HID max NKRO usage on a config option for compatibility (`CONFIG_ZMK_HID_KEYBOARD_EXTENDED_REPORT`)
+
+11/1/2023 - Increase behaviour queue size to permit longer macro sequences to be run
+
+11/1/2023 - Change order of RGB initialisation to prevent situations where lighting could get stuck in battery reporting mode
+
+10/27/2023 - Change HID max NKRO usage to allow usage of F13-F24 and other rarely used keycodes with NKRO enabled 
 
 10/18/2023 - Disable saving certain RGB elements to flash memory to help with flash wear
 
